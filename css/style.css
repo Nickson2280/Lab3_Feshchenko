@@ -1,0 +1,114 @@
+body {
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    background: blueviolet url(../photo/fon.jpg) repeat;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+::after,
+::before {
+    box-sizing: inherit;
+}
+
+.container {
+    width: 100%;
+    padding: 0 15px;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.blocks {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.blocks_inner{
+    display: flex;
+    justify-content: space-between;
+}
+
+.block1{
+    min-width: 350px;
+    height: 600px;
+	background: linear-gradient(to bottom, #2989d8 0%,#0b1949 2%,#0b1949 53%,#233442 100%);
+	color:white;
+    margin-left: 10px;
+	padding:15px;
+    border-radius: 10px;
+    border: 3px solid red;
+}
+
+.block2{
+    color:white;
+    min-width: 350px;
+    height: 600px;
+    padding:15px;
+    margin-left: 10px;
+    margin-top: 10px; 
+    background: url(../photo/block2.jpg) repeat;
+    border-radius: 10px;
+    border-top: 4px solid yellow;
+    border-right: 3px solid green;
+    border-left: 1px solid red;
+    border-bottom: 8px solid black;
+}
+
+.block_title {
+    margin-top: 5px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 23px;
+    color: wheat;
+    font-weight: 700;
+}
+
+.block_button {
+    display: flex;
+    justify-content: center;
+}
+
+.block_button a{
+    background-color: snow;
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 8px;
+    padding: 10px 40px;
+    text-transform: uppercase;
+    font-size: 15px;
+    color: darkorange;
+    font-weight: 700;
+    border: 1px solid black;
+}
+
+.block_button a:hover{
+    background-color: black;
+    color: rebeccapurple;
+    border: 1px solid orange;
+    transition: 1s;
+}
+
+.block3_inner {
+    background-image: url(../photo/block_3_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    border-radius: 10px;
+}
+
+.block3{
+    min-width: 350px;
+    height: 600px;
+    margin-top: 10px;
+    background-image: url(../photo/block_3_top.jpg), url(../photo/block_3_bottom.jpg);
+    background-position: top, bottom;
+    background-repeat: no-repeat, repeat-x;
+    background-size: 30%, 30%;
+    border-radius: 10px;
+}
